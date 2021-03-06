@@ -353,7 +353,7 @@ app.delete("/api/comments/:id", isAuthenticated, function (req, res, next) {
 });
 
 const http = require("http");
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 http.createServer(app).listen(PORT, function (err) {
   if (err) console.log(err);
