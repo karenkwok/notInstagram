@@ -352,6 +352,8 @@ app.delete("/api/comments/:id", isAuthenticated, function (req, res, next) {
   });
 });
 
+app.use("/", express.static(__dirname + "/frontend"));
+
 const http = require("http");
 const PORT = process.env.PORT;
 
