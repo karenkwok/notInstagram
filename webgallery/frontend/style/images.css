@@ -1,0 +1,51 @@
+#image-form {
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 1px;
+}
+
+#hide-btn {
+  margin-top: 5px;
+}
+
+#image-title {
+  max-width: 520px;
+  word-break: break-all;
+}
+
+#image-display {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+}
+
+#image {
+  height: 300px;
+  width: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: solid 1px;
+}
+
+#image img {
+  height: 300px;
+  width: 500px;
+}
+
+#under-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#image-author {
+  margin-top: 5px;
+  max-width: 520px;
+  word-break: break-all;
+}

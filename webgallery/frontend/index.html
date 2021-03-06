@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Gallery</title>
+    <link href="style/index.css" rel="stylesheet" type="text/css" />
+    <link href="style/images.css" rel="stylesheet" type="text/css" />
+    <link href="style/comments.css" rel="stylesheet" type="text/css" />
+    <link href="style/credits.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="signout-btn" class="hidden">
+      <button id="signout" class="sign-btn">Sign Out</button>
+    </div>
+
+    <div id="signup-form" class="sign-form hidden">
+      <form id="create_signup_form" class="create_sign_form">
+        <div>
+          <h2>Sign Up</h2>
+        </div>
+        <input
+          type="text"
+          id="signup-username"
+          class="sign_form_element"
+          placeholder="Enter your username"
+          required
+        />
+        <input
+          type="password"
+          id="signup-password"
+          class="sign_form_element"
+          placeholder="Enter your password"
+          required
+        />
+        <div>
+          <input type="submit" class="sign-btn" value="Sign Up" />
+        </div>
+      </form>
+    </div>
+
+    <div id="signin-form" class="sign-form hidden">
+      <form id="create_signin_form" class="create_sign_form">
+        <div>
+          <h2>Sign In</h2>
+        </div>
+        <input
+          type="text"
+          id="signin-username"
+          class="sign_form_element"
+          placeholder="Enter your username"
+          required
+        />
+        <input
+          type="password"
+          id="signin-password"
+          class="sign_form_element"
+          placeholder="Enter your password"
+          required
+        />
+        <div>
+          <input type="submit" class="sign-btn" value="Sign In" />
+        </div>
+      </form>
+    </div>
+
+    <div id="users-container"></div>
+
+    <div id="error-container"></div>
+
+    <div id="image-form" class="hidden">
+      <form id="create_image_form">
+        <input
+          type="text"
+          id="image-form-title"
+          class="form_element"
+          placeholder="Enter your image title"
+          required
+        />
+        <input
+          type="file"
+          accept="image/*"
+          name="imageFile"
+          id="image-form-url"
+          class="form_element"
+          required
+        />
+        <div class="submit-btn">
+          <input id="image-form-post" type="submit" value="Post" />
+        </div>
+      </form>
+    </div>
+
+    <button id="hide-btn" class="hidden">Hide form</button>
+
+    <div id="image-display">
+      <button id="left-btn" class="arrow" type="button">&#60;</button>
+      <div id="image-container">
+        <h2 id="image-title">Title</h2>
+        <div id="image"></div>
+        <div id="under-image">
+          <h2 id="image-author">Author</h2>
+          <div id="image-delete-btn" class="delete-btn"></div>
+        </div>
+      </div>
+      <button id="right-btn" class="arrow" type="button">&#62;</button>
+    </div>
+
+    <div id="comment-form">
+      <form id="create_comment_form">
+        <textarea
+          id="comment-form-content"
+          class="form_element"
+          placeholder="Add a comment..."
+          rows="5"
+          required
+        ></textarea>
+        <div class="submit-btn">
+          <input type="submit" value="Post" />
+        </div>
+      </form>
+    </div>
+
+    <div id="comment-section">
+      <button id="up-btn" class="arrows" type="button">&#8593;</button>
+      <div class="comment-container"></div>
+      <button id="down-btn" class="arrows" type="button">&#8595;</button>
+    </div>
+
+    <footer id="credits">
+      <a href="/credits.html">credits</a>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
