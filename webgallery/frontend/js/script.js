@@ -4,6 +4,12 @@
   "use strict";
 
   window.onload = function () {
+    document
+      .querySelector("#users-container")
+      .addEventListener("change", function (e) {
+        const username = document.getElementById("users-container").value;
+        api.getImages(username);
+      });
     // signup form
     document
       .querySelector("#create_signup_form")
@@ -35,7 +41,7 @@
       const usersList = document.querySelector("#users-container");
       usersList.innerHTML = "";
       usernames.forEach(function (username) {
-        const div = document.createElement("div");
+        const div = document.createElement("option");
         div.innerHTML = username._id;
         div.addEventListener("click", function () {
           api.getImages(username._id);

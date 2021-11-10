@@ -115,3 +115,6 @@ a:-webkit-any-link {
   background-color: rgb(38,38,38);
 }
 
+#users-container {
+  cursor: pointer;
+}
