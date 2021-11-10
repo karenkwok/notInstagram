@@ -71,7 +71,16 @@ input:focus-visible {
   color: rgba(255, 255, 255, 0.8);
 }
 
+#credits {
+  position: fixed;
+  bottom: 0;
 }
+
+a:-webkit-any-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/**/
 
 .delete-btn {
   background-image: url("../media/delete.png");
@@ -89,6 +98,6 @@ input:focus-visible {
   margin-top: 5px;
 }
 
-#credits {
-  margin-bottom: 10px;
+/**/
+
 }
