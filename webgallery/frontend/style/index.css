@@ -101,4 +101,17 @@ a:-webkit-any-link {
 
 /**/
 
+#image-form-post {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
+
+#image-form-post:hover {
+  background-color: rgb(38,38,38);
+}
+
