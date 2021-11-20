@@ -231,7 +231,7 @@ app.get("/api/images/:id", isAuthenticated, function (req, res, next) {
     } else {
       const imageFile = image.imageFile;
       res.setHeader("Content-Type", imageFile.mimetype);
-      res.sendFile(__dirname + "\\" + imageFile.path);
+      res.sendFile(imageFile.path, {root: "."});
     }
   });
 });
