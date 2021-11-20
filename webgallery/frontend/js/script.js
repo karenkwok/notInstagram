@@ -113,7 +113,8 @@
               displayedCommentsCounter++;
               const author = comment.author;
               const content = comment.content;
-              const date = comment.date;
+              let date = comment.date;
+              let newDate = new Date(date);
               const element = document.createElement("div");
               element.className = "comment";
               element.innerHTML = `
@@ -122,7 +123,7 @@
                 <div class="delete-btn"></div>
               </div>
               <div class="comment-bubble">${content}</div>
-              <div>${date}</div>
+              <div>${newDate.toLocaleString()}</div>
               `;
               element
                 .querySelector(".delete-btn")
@@ -277,7 +278,8 @@
               displayedCommentsCounter++;
               const author = comment.author;
               const content = comment.content;
-              const date = comment.date;
+              let date = comment.date;
+              let newDate = new Date(date);
               const element = document.createElement("div");
               element.className = "comment";
               element.innerHTML = `
@@ -286,7 +288,7 @@
                 <div class="delete-btn"></div>
               </div>
               <div class="comment-bubble">${content}</div>
-              <div>${date}</div>
+              <div>${newDate.toLocaleString()}</div>
               `;
               element
                 .querySelector(".delete-btn")
@@ -319,7 +321,8 @@
                 displayedCommentsCounter++;
                 const author = comment.author;
                 const content = comment.content;
-                const date = comment.date;
+                let date = comment.date;
+                let newDate = new Date(date);
                 const element = document.createElement("div");
                 element.className = "comment";
                 element.innerHTML = `
@@ -328,7 +331,7 @@
                 <div class="delete-btn"></div>
               </div>
               <div class="comment-bubble">${content}</div>
-              <div>${date}</div>
+              <div>${newDate.toLocaleString()}</div>
               `;
                 element
                   .querySelector(".delete-btn")
@@ -375,6 +378,7 @@
                 const author = comment.author;
                 const content = comment.content;
                 const date = comment.date;
+                const newDate = new Date(date);
                 const element = document.createElement("div");
                 element.className = "comment";
                 element.innerHTML = `
@@ -383,7 +387,7 @@
                 <div class="delete-btn"></div>
               </div>
               <div class="comment-bubble">${content}</div>
-              <div>${date}</div>
+              <div>${newDate.toLocaleString()}</div>
               `;
                 element
                   .querySelector(".delete-btn")
