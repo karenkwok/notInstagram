@@ -56,6 +56,15 @@ input:focus-visible {
   outline: none;
 }
 
+#logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 15px;
+}
+
 .sign-btn {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.5);
