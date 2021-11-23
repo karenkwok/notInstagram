@@ -120,7 +120,7 @@
               element.innerHTML = `
               <div class="comment-top">
                 <div class="comment-author">${author}</div>
-                <div class="delete-btn"></div>
+                <i class="delete-btn far fa-trash-alt"></i>
               </div>
               <div class="comment-bubble">${content}</div>
               <div>${newDate.toLocaleString()}</div>
@@ -285,7 +285,7 @@
               element.innerHTML = `
               <div class="comment-top">
                 <div class="comment-author">${author}</div>
-                <div class="delete-btn"></div>
+                <i class="delete-btn far fa-trash-alt"></i>
               </div>
               <div class="comment-bubble">${content}</div>
               <div>${newDate.toLocaleString()}</div>
@@ -328,7 +328,7 @@
                 element.innerHTML = `
               <div class="comment-top">
                 <div class="comment-author">${author}</div>
-                <div class="delete-btn"></div>
+                <i class="delete-btn far fa-trash-alt"></i>
               </div>
               <div class="comment-bubble">${content}</div>
               <div>${newDate.toLocaleString()}</div>
@@ -384,7 +384,7 @@
                 element.innerHTML = `
               <div class="comment-top">
                 <div class="comment-author">${author}</div>
-                <div class="delete-btn"></div>
+                <i class="delete-btn far fa-trash-alt"></i>
               </div>
               <div class="comment-bubble">${content}</div>
               <div>${newDate.toLocaleString()}</div>

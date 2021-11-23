@@ -93,9 +93,7 @@ a:-webkit-any-link {
 /**/
 
 .delete-btn {
-  background-image: url("../media/delete.png");
-  height: 24px;
-  width: 24px;
+  font-size: x-large;
   margin-top: 5px;
   margin-bottom: 5px;
   cursor: pointer;
