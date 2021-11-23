@@ -81,11 +81,6 @@ input:focus-visible {
   color: rgba(255, 255, 255, 0.8);
 }
 
-#credits {
-  position: fixed;
-  bottom: 0;
-}
-
 a:-webkit-any-link {
   color: rgba(255, 255, 255, 0.5);
 }
