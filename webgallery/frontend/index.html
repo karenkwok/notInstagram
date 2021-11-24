@@ -20,10 +20,19 @@
     />
   </head>
   <body>
-    <img id="logo" src="media/logo.png" />
-    <div id="signout-btn" class="hidden">
-      <button id="signout" class="sign-btn">Sign Out</button>
+    <div id="header-items">
+      <div id="header-left">
+        <select id="users-container" class="hidden"></select>
+      </div>
+      <div id="header-middle">
+        <img id="logo" src="media/logo.png" />
         <div id="title">notInstagram</div>
+      </div>
+      <div id="header-right">
+        <div id="signout-btn" class="hidden">
+          <button id="signout" class="sign-btn">Sign Out</button>
+        </div>
+      </div>
     </div>
 
     <div id="forms">
@@ -77,8 +86,6 @@
         </form>
       </div>
     </div>
-
-    <select id="users-container" class="hidden"></select>
 
     <div id="error-container"></div>
 

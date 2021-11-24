@@ -18,6 +18,16 @@ body {
   background-attachment: fixed;
 }
 
+select.hidden {
+  visibility: hidden !important;
+  display: block !important;
+}
+
+#signout-btn.hidden {
+  visibility: hidden !important;
+  display: block !important;
+}
+
 .hidden {
   display: none !important;
 }
@@ -56,17 +66,36 @@ input:focus-visible {
   outline: none;
 }
 
+#header-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+#header-left {
+  margin-left: 2rem;
+}
+
+#header-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #logo {
   height: 100px;
   width: 100px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  border-radius: 15px;
+}
+
 #title {
   font-family: 'Lobster Two', cursive;
   font-size: 50px;
 }
+
+#header-right {
+  margin-right: 2rem;
 }
 
 .sign-btn {
@@ -83,6 +112,11 @@ input:focus-visible {
 .sign-btn:hover {
   background-color: rgba(255, 255, 255, 0.25);
   color: rgba(255, 255, 255, 0.8);
+}
+
+#signout {
+  width: 8vw;
+  color: white;
 }
 
 a:-webkit-any-link {
