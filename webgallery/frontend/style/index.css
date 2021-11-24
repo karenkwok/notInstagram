@@ -141,7 +141,7 @@ a:-webkit-any-link {
 
 /**/
 
-#image-form-post {
+.form-post {
   background-color: black;
   color: white;
   font-weight: bold;
@@ -151,7 +151,7 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-#image-form-post:hover {
+.form-post:hover {
   background-color: rgb(38,38,38);
 }
 
