@@ -158,3 +158,14 @@ a:-webkit-any-link {
 #users-container {
   cursor: pointer;
 }
+
+.arrow {
+  background-color: #ffffff2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.arrow:hover {
+  background-color: #ffffff53;
+}
