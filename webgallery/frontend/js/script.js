@@ -39,7 +39,7 @@
 
     api.onUsernameUpdate(function (usernames) {
       const usersList = document.querySelector("#users-container");
-      usersList.innerHTML = "";
+      usersList.innerHTML = "<option>Select a User</option>";
       usernames.forEach(function (username) {
         const div = document.createElement("option");
         div.innerHTML = username._id;
