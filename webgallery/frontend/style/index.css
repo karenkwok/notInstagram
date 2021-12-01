@@ -152,7 +152,28 @@ a:-webkit-any-link {
 }
 
 .form-post:hover {
-  background-color: rgb(38,38,38);
+  background-color: #3b3b3b;
+}
+
+#image-form-title {
+  margin-bottom: 20px;
+}
+
+.custom-upload-file {
+  background-color: #593ff6;
+  color: white;
+  font-size: smaller;
+  padding: 14px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-upload-file:hover {
+  background-color: #7962ff;
+}
+
+#upload {
+  font-size: large;
 }
 
 #users-container {
