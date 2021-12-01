@@ -156,6 +156,11 @@ a:-webkit-any-link {
 }
 
 #image-form-title {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: larger;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
   margin-bottom: 20px;
 }
 
@@ -170,6 +175,10 @@ a:-webkit-any-link {
 
 .custom-upload-file:hover {
   background-color: #7962ff;
+}
+
+.custom-upload-file:focus-visible {
+  outline: none;
 }
 
 #upload {
