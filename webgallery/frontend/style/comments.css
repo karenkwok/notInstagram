@@ -49,6 +49,7 @@
 }
 
 .comment-bubble {
+  padding: 5px;
   border-radius: 10px;
   border: solid 1px;
   max-width: 500px;
