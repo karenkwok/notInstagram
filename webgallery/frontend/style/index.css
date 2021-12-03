@@ -186,6 +186,17 @@ a:-webkit-any-link {
   font-size: large;
 }
 
+#upload-btn-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#file-name {
+  color: white;
+  margin-left: 10px;
+}
+
 #users-container {
   cursor: pointer;
 }

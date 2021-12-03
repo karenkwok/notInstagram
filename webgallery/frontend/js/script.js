@@ -159,6 +159,13 @@
 
         document.querySelector("#create_image_form").reset();
       });
+    // file upload
+    document
+      .getElementById("image-form-url")
+      .addEventListener("change", function (e) {
+        document.querySelector("#file-name").textContent =
+          document.getElementById("image-form-url").files[0].name;
+      });
 
     // displaying first image with title, author, url
     // listener of observer pattern

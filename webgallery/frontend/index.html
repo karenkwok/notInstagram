@@ -98,9 +98,13 @@
           placeholder="Enter your image title"
           required
         />
-        <label class="custom-upload-file" for="image-form-url"
-          ><i id="upload" class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp;Upload File</label
-        >
+        <div id="upload-btn-name">
+          <label class="custom-upload-file" for="image-form-url"
+            ><i id="upload" class="fas fa-cloud-upload-alt"></i
+            >&nbsp;&nbsp;Upload File</label
+          >
+          <div id="file-name"></div>
+        </div>
         <input
           type="file"
           accept="image/*"
